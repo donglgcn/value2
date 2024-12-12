@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dilemmas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <div id="landing" class="screen active">
+            <div class="card">
+                <h1>Welcome to <span class="highlight">Data Dilemmas</span></h1>
+                <p>
+                    Navigate through 20 ethical dilemmas involving data, decisions, and consequences. Your choices will shape a personalized profile of your priorities and ethics.
+                </p>
+                <button id="startButton" class="btn-primary">Start Game</button>
+            </div>
+        </div>
+
+        <!-- Scenario Screen -->	
+        <div id="scenario" class="screen">
+            <div class="card">
+                <h2 id="scenarioTitle" class="title">Scenario 1</h2>
+                <p id="scenarioText" class="description">
+                    
+                </p>
+                <div class="choices">
+                    <button id="choiceA" class="btn-secondary"></button>
+                    <button id="choiceB" class="btn-secondary"></button>
+                </div>
+                
+                <!--<div class="metrics">
+                    <h3>Metrics</h3>
+                    <p><strong>Privacy vs. Utility:</strong> <span id="privacyUtility">50%</span></p>
+                    <p><strong>Social Trust Indicator:</strong> <span id="socialTrust">50%</span></p>
+                </div>
+				-->
+            </div>
+        </div>
+
+        <!-- Summary Page -->
+        <div id="summary" class="screen">
+            <div class="card">
+                <h2 class="title">Your Decision Profile</h2>
+                <p>You’ve completed the scenarios! Here’s what your choices reveal:</p>
+                <div id="results" class="results"></div>
+                <button id="restartButton" class="btn-primary">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
