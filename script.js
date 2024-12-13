@@ -236,7 +236,7 @@ Additionally, I believe we all experienced the COVID-19 pandemic. In China, peop
 
 Lastly, in the final scenario, it’s common for people to forgive someone even if it compromises the precision of data. This is a human response that reflects values beyond pure data accuracy.
 
-This game aims to make you think critically about the trade-offs between data privacy and other priorities. By exploring these scenarios, you gain a deeper understanding of the ethical dilemmas that arise in the use of data. </p>
+This game aims to make you think critically about the trade-offs between data privacy and other priorities. By exploring these scenarios, you gain a deeper understanding of the ethical dilemmas that arise in the use of data. </p>`
 
     // Provide a summary interpretation
     resultsContainer.innerHTML += `
