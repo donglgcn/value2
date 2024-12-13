@@ -89,7 +89,7 @@ const scenarios = [
         "title": "Scenario 8: Disaster Relief and Resource Allocation",
         "text": "During a disaster, you collect data showing that wealthier neighborhoods report damage more frequently, but poorer areas are more vulnerable. Allocating resources based on reports may lead to inequitable distribution.",
         "optionA": "Use the report data",
-        "feedbackA": "You chose to use the report data. This ensures responsiveness but overlooks vulnerabilities.",
+        "feedbackA": "You chose to use the report data. This ensures responsiveness and they promiss donations for rebuild. But it overlooks vulnerabilities.",
         "equityChangeA": -20,
         "efficiencyChangeA": 15,
         "optionB": "Prioritize underserved areas",
@@ -153,8 +153,8 @@ const scenarios = [
         "publicHealthChangeA": 20,
         "privacyChangeA": -15,
         "optionB": "Do not share data",
-        "feedbackB": "You chose not to share the data. This protects privacy but limits the effectiveness of interventions.",
-        "publicHealthChangeB": -10,
+        "feedbackB": "You chose not to share the data. This protects privacy but limits the effectiveness of interventions and may cause more severe pandemic.",
+        "publicHealthChangeB": -20,
         "privacyChangeB": 20
     },
     {
