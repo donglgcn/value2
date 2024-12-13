@@ -230,17 +230,29 @@ const showSummary = () => {
     }
     // Provide a summary interpretation
     resultsContainer.innerHTML += `
-        <h3>Summary:</h3>
-        <p>Your choices prioritized ${
-            results.privacy >= results.trust ? "privacy" : "trust"
-        } over ${
-            results.efficiency >= results.equity ? "efficiency" : "equity"
-        }. ${
-            results.environment > 0
-                ? "You emphasized environmental responsibility."
-                : "You prioritized economic stability."
-        }</p>`;
-	resultsContainer.innerHTML += `<p>Although some of the settings are exaggerated, many are realistic and have happened to me. For example, in Scenario 4, "Your team proposes tracking users' behavior on a platform to personalize experiences. This could increase engagement but raises significant privacy concerns." I used to work at *** company, where sensitive user information—such as addresses, phone numbers, and dates of birth—was used for model training. While this data was critical for fraud prevention and recommendation systems, it also raised significant privacy issues. Users could not opt out if they wanted to use the service. Similarly, hiring algorithms are incredibly common but often biased. These systems rely on historical data from previous employees, perpetuating inequalities and discrimination encoded in the past. Additionally, I believe we all experienced the COVID-19 pandemic. In China, people were required to share their location and travel information to help control the spread of the virus. Personally, I was fine with this because I believe sharing my information could save my life and the lives of others. However, I understand that not everyone might feel the same way. Lastly, in the final scenario, it’s common for people to forgive someone even if it compromises the precision of data. This is a human response that reflects values beyond pure data accuracy. This game aims to make you think critically about the trade-offs between data privacy and other priorities. By exploring these scenarios, you gain a deeper understanding of the ethical dilemmas that arise in the use of data. </p>`
+    <h3>Summary:</h3>
+    <p>Your choices prioritized ${
+        results.privacy >= results.trust ? "privacy" : "trust"
+    } over ${
+        results.efficiency >= results.equity ? "efficiency" : "equity"
+    }. ${
+        results.environment > 0
+            ? "You emphasized environmental responsibility."
+            : "You prioritized economic stability."
+    }</p>`;
+
+    resultsContainer.innerHTML += `
+    <p>
+        Although some of the settings are exaggerated, many are realistic and have happened to me. For example, in Scenario 4, "Your team proposes tracking users' behavior on a platform to personalize experiences. This could increase engagement but raises significant privacy concerns." I used to work at *** company, where sensitive user information—such as addresses, phone numbers, and dates of birth—was used for model training. While this data was critical for fraud prevention and recommendation systems, it also raised significant privacy issues. Users could not opt out if they wanted to use the service.
+
+        Similarly, hiring algorithms are incredibly common but often biased. These systems rely on historical data from previous employees, perpetuating inequalities and discrimination encoded in the past.
+
+        Additionally, I believe we all experienced the COVID-19 pandemic. In China, people were required to share their location and travel information to help control the spread of the virus. Personally, I was fine with this because I believe sharing my information could save my life and the lives of others. However, I understand that not everyone might feel the same way.
+
+        Lastly, in the final scenario, it’s common for people to forgive someone even if it compromises the precision of data. This is a human response that reflects values beyond pure data accuracy.
+
+        This game aims to make you think critically about the trade-offs between data privacy and other priorities. By exploring these scenarios, you gain a deeper understanding of the ethical dilemmas that arise in the use of data.
+    </p>`;
 
 };
 
